@@ -120,11 +120,11 @@ export function ExpertVideoReviewComponent() {
       <nav className="flex items-center justify-between p-4 border-b border-gray-200 relative z-20">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/placeholder.svg"
-            alt="Logo de l'entreprise"
+            src="https://placehold.co/40x40/png?text=Logo"
+            alt={`Logo de l'entreprise`}
             width={40}
             height={40}
-            className="rounded-full"
+            objectFit="cover"
           />
           <span className="text-xl font-bold">Le Beau Geste de {'{NOM_DE_L\'ENTREPRISE}'}</span>
         </Link>
