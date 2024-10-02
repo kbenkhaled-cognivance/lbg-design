@@ -84,7 +84,7 @@ export function HomePage() {
   const [selectedWorker, setSelectedWorker] = useState(null)
   const [selectedJob, setSelectedJob] = useState(null)
   const [showPdfViewer, setShowPdfViewer] = useState(false)
-  const [setCurrentNewsIndex] = useState(0)
+  const [setCurrentNewsIndex] = useState<number>(0); // Explicitly set the type to 'number'
   const [editingJob, setEditingJob] = useState(null)
 
   const availableIcons = [
@@ -99,6 +99,13 @@ export function HomePage() {
     { name: "Headphones", icon: Headphones },
   ]
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentNewsIndex((prevIndex: number) => (prevIndex + 1) % newsItems.length);
+    }, 5000);
+  
+    return () => clearInterval(timer);
+  }, [newsItems.length]); // Add 'newsItems.length' as a dependency
 
   
 
