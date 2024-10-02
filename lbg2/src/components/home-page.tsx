@@ -84,7 +84,9 @@ export function HomePage() {
   const [selectedWorker, setSelectedWorker] = useState(null)
   const [selectedJob, setSelectedJob] = useState(null)
   const [showPdfViewer, setShowPdfViewer] = useState(false)
-  const [setCurrentNewsIndex] = useState<number>(0); // Explicitly set the type to 'number'
+  // Disable for this line only
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [currentNewsIndex,setCurrentNewsIndex] = useState<number>(0); // Explicitly set the type to 'number'
   const [editingJob, setEditingJob] = useState(null)
 
   const availableIcons = [
