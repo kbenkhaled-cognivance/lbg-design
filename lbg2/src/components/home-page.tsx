@@ -99,12 +99,15 @@ export function HomePage() {
     { name: "Headphones", icon: Headphones },
   ]
 
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentNewsIndex((prevIndex) => (prevIndex + 1) % newsItems.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
+      setCurrentNewsIndex((prevIndex: number) => (prevIndex + 1) % newsItems.length);
+    }, 5000);
+  
+    return () => clearInterval(timer);
+  }, [newsItems.length]); // Ensure this is included as a dependency
+
 
   const nextVideo = () => {
     setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % taskVideoSnippets.length)
