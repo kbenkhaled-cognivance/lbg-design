@@ -131,10 +131,7 @@ export function HomePage() {
 
   
 
-  const deleteJob = (index) => {
-    const updatedJobs = jobs.filter((_, i) => i !== index)
-    setJobs(updatedJobs)
-  }
+  
 
   return (
     <div className="min-h-screen bg-gray-50">
