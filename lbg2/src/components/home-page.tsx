@@ -129,10 +129,6 @@ export function HomePage() {
     setJobs([...jobs, newJob])
   }
 
-  const editJob = (job) => {
-    setEditingJob({ ...job })
-  }
-
   const saveEditedJob = () => {
     setJobs(jobs.map(job => job.title === editingJob.title ? editingJob : job))
     setEditingJob(null)
