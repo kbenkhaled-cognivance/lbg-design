@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useCallback ,useEffect } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { MessageSquare, User, BarChart2, BookOpen, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, Download, Scissors, Coffee, Smartphone, Headphones } from "lucide-react"
