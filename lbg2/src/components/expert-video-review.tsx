@@ -67,7 +67,7 @@ export function ExpertVideoReviewComponent() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext(&apos;2d&apos;);
+    const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -121,12 +121,12 @@ export function ExpertVideoReviewComponent() {
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="https://placehold.co/40x40/png?text=Logo"
-            alt={`Logo de l&apos;entreprise`}
+            alt={`Logo de l'entreprise`}
             width={40}
             height={40}
             objectFit="cover"
           />
-          <span className="text-xl font-bold">Le Beau Geste de {&apos;{NOM_DE_L\&apos;ENTREPRISE}&apos;}</span>
+          <span className="text-xl font-bold">Le Beau Geste de {'{NOM_DE_L\'ENTREPRISE}'}</span>
         </Link>
       </nav>
 
@@ -143,35 +143,35 @@ export function ExpertVideoReviewComponent() {
             </div>
             <div className="flex justify-center space-x-4">
               <div className="flex flex-col items-center">
-                <Button variant="outline" size="icon" title="Reculer de 5 secondes" onClick={handleButtonClick(&apos;#3498db&apos;)}>
+                <Button variant="outline" size="icon" title="Reculer de 5 secondes" onClick={handleButtonClick('#3498db')}>
                   <Rewind className="w-4 h-4" />
                   <span className="sr-only">Reculer de 5 secondes</span>
                 </Button>
                 <span className="text-xs mt-1">-5s</span>
               </div>
               <div className="flex flex-col items-center">
-                <Button variant="outline" size="icon" title="Lecture" onClick={handleButtonClick(&apos;#2ecc71&apos;)}>
+                <Button variant="outline" size="icon" title="Lecture" onClick={handleButtonClick('#2ecc71')}>
                   <Play className="w-4 h-4" />
                   <span className="sr-only">Lecture</span>
                 </Button>
                 <span className="text-xs mt-1">Lecture</span>
               </div>
               <div className="flex flex-col items-center">
-                <Button variant="outline" size="icon" title="Pause" onClick={handleButtonClick(&apos;#e74c3c&apos;)}>
+                <Button variant="outline" size="icon" title="Pause" onClick={handleButtonClick('#e74c3c')}>
                   <Pause className="w-4 h-4" />
                   <span className="sr-only">Pause</span>
                 </Button>
                 <span className="text-xs mt-1">Pause</span>
               </div>
               <div className="flex flex-col items-center">
-                <Button variant="outline" size="icon" title="Avancer de 5 secondes" onClick={handleButtonClick(&apos;#f39c12&apos;)}>
+                <Button variant="outline" size="icon" title="Avancer de 5 secondes" onClick={handleButtonClick('#f39c12')}>
                   <FastForward className="w-4 h-4" />
                   <span className="sr-only">Avancer de 5 secondes</span>
                 </Button>
                 <span className="text-xs mt-1">+5s</span>
               </div>
               <div className="flex flex-col items-center">
-                <Button variant="outline" size="icon" title="Rejouer" onClick={handleButtonClick(&apos;#9b59b6&apos;)}>
+                <Button variant="outline" size="icon" title="Rejouer" onClick={handleButtonClick('#9b59b6')}>
                   <Repeat className="w-4 h-4" />
                   <span className="sr-only">Rejouer</span>
                 </Button>
@@ -188,7 +188,7 @@ export function ExpertVideoReviewComponent() {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-4">
-            <h2 className="text-xl font-bold mb-4">Commentaires de l&apos;expert</h2>
+            <h2 className="text-xl font-bold mb-4">Commentaires de l'expert</h2>
             <ul className="space-y-4">
               {comments.map((item) => (
                 <li key={item.id} className="flex items-start justify-between">
