@@ -188,7 +188,7 @@ export function ExpertVideoReviewComponent() {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-4">
-            <h2 className="text-xl font-bold mb-4">Commentaires de l'expert</h2>
+            <h2 className="text-xl font-bold mb-4">Commentaires de l&apos;expert</h2>
             <ul className="space-y-4">
               {comments.map((item) => (
                 <li key={item.id} className="flex items-start justify-between">
