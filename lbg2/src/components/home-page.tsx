@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { MessageSquare, User, BarChart2, BookOpen, Users, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, FileText, Download, Scissors, Coffee, Smartphone, Headphones } from 'lucide-react'
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
@@ -141,7 +142,7 @@ export function HomePage() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="https://placehold.co/40x40/png?text=Logo" alt="Logo du client" className="h-10 w-10 mr-3" />
+            <Image src="https://placehold.co/40x40/png?text=Logo" alt="Logo du client" className="h-10 w-10 mr-3" />
             <h1 className="text-3xl font-bold text-gray-900">Le Beau Geste de {clientName}</h1>
           </div>
           <nav>
@@ -165,7 +166,7 @@ export function HomePage() {
             >
               <div className="bg-white shadow rounded-lg p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="https://placehold.co/160x160/png?text=Avatar"
                     alt="Avatar de l'utilisateur"
                     className="h-40 w-40 rounded-full mr-4"
@@ -199,7 +200,7 @@ export function HomePage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Extraits vidéo des tâches</h3>
                 <div className="relative">
                   <div className="aspect-w-16 aspect-h-9 mb-4" style={{height: "180px"}}>
-                    <img
+                    <Image
                       src={`https://placehold.co/320x180/png?text=Vidéo+de+tâche+${currentVideoIndex + 1}`}
                       alt={`Vidéo de tâche ${currentVideoIndex + 1}`}
                       className="object-cover rounded"
@@ -388,7 +389,7 @@ export function HomePage() {
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
                       <div className="relative">
-                        <img className="h-10 w-10 rounded-full" src="https://placehold.co/40x40/png" alt="Avatar CoGeo" />
+                        <Image className="h-10 w-10 rounded-full" src="https://placehold.co/40x40/png" alt="Avatar CoGeo" />
                         <div className="absolute -bottom-1 -right-1 bg-green-500 rounded-full p-1">
                           <Brain className="h-4 w-4 text-white" />
                         </div>
