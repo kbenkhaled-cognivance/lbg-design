@@ -101,14 +101,15 @@ export function HomePage() {
     { name: "Headphones", icon: Headphones },
   ]
 
-  const rotateNews = useCallback(() => {
-    setCurrentNewsIndex((prevIndex) => (prevIndex + 1) % newsItems.length)
-  }, [newsItems.length])
+    const rotateNews = useCallback(() => {
+    setCurrentNewsIndex((prevIndex) => (prevIndex + 1) % newsItems.length);
+  }, [newsItems.length]);
 
   useEffect(() => {
-    const timer = setInterval(rotateNews, 5000)
-    return () => clearInterval(timer)
-  }, [rotateNews])
+    const timer = setInterval(rotateNews, 5000);
+    return () => clearInterval(timer);
+  }, [rotateNews]);
+
   
 
   const nextVideo = () => {
