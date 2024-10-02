@@ -34,7 +34,7 @@ export function HomePage() {
     { name: 'Juin', Commentaires: 3 },
   ]
 
-  const [workers, setWorkers] = useState([
+  const [workers] = useState([
     { name: "John Doe", position: "Développeur", experience: 5, startDate: "2018-03-15", phone: "+33123456789", email: "john.doe1@example.com", coursesGenerated: 12 },
     { name: "Jane Doe", position: "Designer", experience: 3, startDate: "2020-07-01", phone: "+33987654321", email: "jane.doe1@example.com", coursesGenerated: 8 },
     { name: "John Doe", position: "Manager", experience: 7, startDate: "2016-11-30", phone: "+33456789012", email: "john.doe2@example.com", coursesGenerated: 15 },
@@ -84,7 +84,7 @@ export function HomePage() {
   const [selectedWorker, setSelectedWorker] = useState(null)
   const [selectedJob, setSelectedJob] = useState(null)
   const [showPdfViewer, setShowPdfViewer] = useState(false)
-  const [currentNewsIndex, setCurrentNewsIndex] = useState(0)
+  const [setCurrentNewsIndex] = useState(0)
   const [editingJob, setEditingJob] = useState(null)
 
   const availableIcons = [
