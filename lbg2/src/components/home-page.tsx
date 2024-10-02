@@ -129,10 +129,7 @@ export function HomePage() {
     setJobs([...jobs, newJob])
   }
 
-  const saveEditedJob = () => {
-    setJobs(jobs.map(job => job.title === editingJob.title ? editingJob : job))
-    setEditingJob(null)
-  }
+  
 
   const deleteJob = (index) => {
     const updatedJobs = jobs.filter((_, i) => i !== index)
