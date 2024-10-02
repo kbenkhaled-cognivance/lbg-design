@@ -101,12 +101,10 @@ export function HomePage() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentNewsIndex((prevIndex: number) => (prevIndex + 1) % newsItems.length);
-    }, 5000);
-  
-    return () => clearInterval(timer);
-  }, [newsItems.length]); // Add 'newsItems.length' as a dependency
-
+      setCurrentNewsIndex((prevIndex: number) => (prevIndex + 1) % newsItems.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [newsItems.length])
   
 
   const nextVideo = () => {
