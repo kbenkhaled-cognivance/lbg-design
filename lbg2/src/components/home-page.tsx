@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { MessageSquare, User, BarChart2, BookOpen, Users, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, FileText, Download, Scissors, Coffee, Smartphone, Headphones } from "lucide-react"
+import { MessageSquare, User, BarChart2, BookOpen, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, Download, Scissors, Coffee, Smartphone, Headphones } from "lucide-react"
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
 
 export function HomePage() {
@@ -173,7 +173,7 @@ export function HomePage() {
                   />
                 </div>
                 <h2 className="text-4xl font-bold text-gray-900 text-center mb-4">Bienvenue, {userName}</h2>
-                <p className="text-2xl text-gray-600 text-center">Améliorez vos compétences avec notre système d'analyse des tâches et de retour d'experts de pointe.</p>
+                <p className="text-2xl text-gray-600 text-center">Améliorez vos compétences avec notre système d&apos;analyse des tâches et de retour d&apos;experts de pointe.</p>
               </div>
               <div className="mt-4 bg-blue-600 text-white p-4 rounded-lg overflow-hidden">
                 <div className="whitespace-nowrap overflow-hidden">
@@ -265,7 +265,7 @@ export function HomePage() {
             >
               <div className="flex flex-col lg:flex-row gap-6 mb-8">
                 <div className="flex-1 bg-white shadow rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Travailleurs de l'entreprise</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Travailleurs de l&apos;entreprise</h3>
                   <ol className="list-decimal list-inside space-y-2">
                     {workers.map((worker, index) => (
                       <li key={index} className="text-gray-700 flex justify-between items-center">
@@ -396,7 +396,7 @@ export function HomePage() {
                       </div>
                     </div>
                     <div className="ml-3 bg-gray-100 rounded-lg p-3">
-                      <p className="text-sm text-gray-900">Bonjour ! Je suis CoGeo, votre assistant de formation IA. Comment puis-je vous aider aujourd'hui ?</p>
+                      <p className="text-sm text-gray-900">Bonjour ! Je suis CoGeo, votre assistant de formation IA. Comment puis-je vous aider aujourd&apos;hui ?</p>
                     </div>
                   </div>
                   <div className="flex items-start justify-end">
@@ -456,7 +456,7 @@ export function HomePage() {
             <h3 className="text-2xl font-bold mb-6 text-gray-900 border-b pb-2">{selectedWorker.name}</h3>
             <div className="space-y-4">
               <p><span className="font-semibold text-gray-700">Poste:</span> <span className="text-gray-900">{selectedWorker.position}</span></p>
-              <p><span className="font-semibold text-gray-700">Années d'expérience:</span> <span className="text-gray-900">{selectedWorker.experience}</span></p>
+              <p><span className="font-semibold text-gray-700">Années d&apos;expérience:</span> <span className="text-gray-900">{selectedWorker.experience}</span></p>
               <p><span className="font-semibold text-gray-700">Date de début:</span> <span className="text-gray-900">{selectedWorker.startDate}</span></p>
               <p><span className="font-semibold text-gray-700">Téléphone:</span> <span className="text-gray-900">{selectedWorker.phone}</span></p>
               <p><span className="font-semibold text-gray-700">Email:</span> <span className="text-gray-900">{selectedWorker.email}</span></p>
