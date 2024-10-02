@@ -1,8 +1,8 @@
 "use client"; // This is needed to use React hooks
 
 import { useState } from "react";
-import { ExpertVideoReviewComponent } from "/workspaces/lbg-design/lbg2/src/components/expert-video-review";
-import { HomePage } from "/workspaces/lbg-design/lbg2/src/components/home-page";
+import { ExpertVideoReviewComponent } from "/lbg-design/lbg2/src/components/expert-video-review";
+import { HomePage } from "/lbg-design/lbg2/src/components/home-page";
 import './/globals.css'; // Make sure this file exists
 
 export default function Home() {
