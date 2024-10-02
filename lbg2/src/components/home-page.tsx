@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { MessageSquare, User, BarChart2, BookOpen, Users, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, FileText, Download, Scissors, Coffee, Smartphone, Headphones } from 'lucide-react'
-import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import React, { useState, useEffect } from "react"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import { MessageSquare, User, BarChart2, BookOpen, Users, Award, Briefcase, Wrench, Code, PenTool, Camera, ChevronLeft, ChevronRight, Play, Pause, Brain, Plus, Edit2, X, Eye, FileText, Download, Scissors, Coffee, Smartphone, Headphones } from "lucide-react"
+import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
 
 export function HomePage() {
   const clientName = "[nom_entreprise_cible]"
